@@ -1,5 +1,4 @@
-#! bash
 
 echo "start login" >> ./log.txt
-pipenv python miyadai_login.py >> ./log.txt
+pipenv run python ./miyadai_login.py 
 echo "end login" >> ./log.txt
