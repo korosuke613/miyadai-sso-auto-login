@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d510bbbcd3af325636f565beb2406c81397d6ff58a83bd6f09ff116a891d3ad0"
+            "sha256": "7c32769b6e99c761dac6b50f5052f812488e01a4c4d55175bf4f060f0b7f5fb8"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3."
+            "python_version": "3.6.6"
         },
         "sources": [
             {
@@ -47,6 +47,13 @@
             "markers": "sys_platform == 'win32'",
             "version": "==223"
         },
+        "pywin32-ctypes": {
+            "hashes": [
+                "sha256:4820b830f42e6889d34142bcd07b3896018c3620d8c31f5e13b72caf1f4d1d0f"
+            ],
+            "markers": "sys_platform == 'win32'",
+            "version": "==0.1.2"
+        },
         "selenium": {
             "hashes": [
                 "sha256:c53d13a2627d835fee3d1d6291214c62196dfeb6f5f35572bacf31ac60c030c0",
@@ -60,7 +67,7 @@
                 "sha256:a68ac5e15e76e7e5dd2b8f94007233e01effe3e50e8daddf69acfd81cb686baf",
                 "sha256:b5725a0bd4ba422ab0e66e89e030c806576753ea3ee08554382c14e685d117b5"
             ],
-            "markers": "python_version != '3.2.*' and python_version != '3.0.*' and python_version < '4' and python_version >= '2.6' and python_version != '3.3.*' and python_version != '3.1.*'",
+            "markers": "python_version != '3.1.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version < '4' and python_version != '3.3.*' and python_version >= '2.6'",
             "version": "==1.23"
         }
     },
