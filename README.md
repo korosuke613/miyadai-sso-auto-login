@@ -1,3 +1,6 @@
+# miyadai-sso-auto-login
+miyadai-sso-auto-login is auto login system in University of Miyazaki.
+
 ## install
 
 ### Windows
@@ -10,4 +13,5 @@
 6. Run `pipenv install`
 7. Run `pipenv run python ./save_pass.py`
 8. Run `pipenv run python ./miyadai_login.py`
-9. Perform clone setting.
+9. Perform clone setting.(参照: [Windowsで定期自動ログインする
+](https://github.com/korosuke613/miyadai-sso-auto-login/wiki/Windows%E3%81%A7%E5%AE%9A%E6%9C%9F%E8%87%AA%E5%8B%95%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%99%E3%82%8B))
