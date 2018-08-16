@@ -1,4 +1,6 @@
+#!/bin/bash
 
-echo "start login" >> ./log.txt
-pipenv run python ./miyadai_login.py 
-echo "end login" >> ./log.txt
+export DISPLAY=:0
+
+pipenv run python ./miyadai_login.py >>./cron_log.txt 2>>./error-log.txt
+

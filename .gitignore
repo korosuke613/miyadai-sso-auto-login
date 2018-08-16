@@ -2,3 +2,5 @@
 log.txt
 .idea/
 user.txt
+error-log.txt
+cron_log.txt
