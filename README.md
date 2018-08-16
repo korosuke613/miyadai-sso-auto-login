@@ -1,12 +1,10 @@
 # miyadai-sso-auto-login
 miyadai-sso-auto-login is auto login system in University of Miyazaki.
-required 
-
 
 ## install
+Please install Python3.x in advance.
 
 ### Windows
-
 1. Open PowerShell with Administrator
 2. Run `pip install pipenv`
 3. Run `git clone --depth=1 https://github.com/korosuke613/miyadai-sso-auto-login.git`
