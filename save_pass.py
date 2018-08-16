@@ -12,8 +12,15 @@ def save_password_to_os():
     if password == retry_password:
         keyring.set_password('keyring_selenium', mid, password)
         print("Success! Store your login info.")
+        create_user_file(mid)
     else:
         print("Don't same password! Please again.")
+
+
+def create_user_file(name):
+    path_w = 'user.txt'
+    with open(path_w, mode='w') as f:
+        f.write(name)
 
 
 if __name__ == '__main__':

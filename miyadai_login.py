@@ -64,5 +64,13 @@ def login(mid):
     return
 
 
+def read_user_file():
+    path = 'user.txt'
+    with open(path, mode='r') as f:
+        name = f.readline()
+    return name
+
+
 if __name__ == '__main__':
-    login("syu5089")
+    mid = read_user_file()
+    login(mid)
