@@ -20,15 +20,15 @@ def login(mid):
     # WebDriverのパスを指定してChromeを起動
     os_name = platform.system()
     if os_name == "Darwin":
-        driver_pass = "bin/chromedriver_mac_v2_41"
+        driver_path = "bin/chromedriver_mac_v2_41"
     elif os_name == "Linux":
-        driver_pass = "bin/chromedriver_linux_v2_41"
+        driver_path = "bin/chromedriver_linux_v2_41"
     elif os_name == "Windows":
-        driver_pass = "bin/chromedriver_win32_v2_41.exe"
+        driver_path = "bin/chromedriver_win32_v2_41.exe"
     else:
         print("Unknown System. Please send Issue.")
         return
-    driver = webdriver.Chrome(driver_pass)
+    driver = webdriver.Chrome(driver_path)
 
     # Yahooのページをブラウザで開きます
     miyadai_url = "https://www.miyazaki-u.ac.jp/"
