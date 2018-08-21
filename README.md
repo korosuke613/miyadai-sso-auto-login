@@ -42,10 +42,11 @@ Don't work Python3.7 for Windows.
     1. If the above is OK, next 7.
     1. Else, run `wget https://github.com/electron/electron/releases/download/v1.6.0/chromedriver-v2.21-linux-armv7l.zip`
     1. Run `unzip chromedriver-v2.21-linux-armv7l.zip -d /open/your/path/chromedriver`
-1. Edit 17 line to `        driver_path = "/path/in/your/chromedriver/chromedriver"`
 1. Run `git clone --depth=1 https://github.com/korosuke613/miyadai-sso-auto-login.git`
 1. Run `cd miyadai-sso-auto-login`
-1. Run `pipenv install`
+1. Edit 17 line to `        driver_path = "/path/in/your/chromedriver/chromedriver"`
+1. Run `pipenv --python 3.6.6 install`
+1. Run `pipenv install selenium`
 1. Run `pipenv run python ./save_pass_in_raspbian.py`
 1. Run `pipenv run python ./miyadai_login_in_raspbian.py`
 1. Perform clone setting.(参照: [Ubuntuで定期自動ログインする
