@@ -1,5 +1,5 @@
 # miyadai-sso-auto-login
-miyadai-sso-auto-login is auto login system in University of Miyazaki.
+Auto login system in University of Miyazaki.
 
 ![](https://github.com/korosuke613/miyadai-sso-auto-login/blob/master/images/use.gif)
 
