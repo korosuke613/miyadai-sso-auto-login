@@ -32,8 +32,7 @@ Don't work Python3.7 for Windows.
 
 ### Raspbian
 
-__Caution__
-
+__!!!Caution!!!__
 This script cannot run at Raspberry Pi ZERO!
 Please run at Raspberry Pi using __armv7l__!
 
