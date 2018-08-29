@@ -22,12 +22,14 @@ def login(mid):
         print("Please edit driver_path in 17 line!")
         return
     driver = webdriver.Chrome(driver_path)
+    driver.set_page_load_timeout(10)
 
-    # Yahooのページをブラウザで開きます
-    miyadai_url = "https://www.miyazaki-u.ac.jp/"
-    driver.get(miyadai_url)
-    print(driver.current_url)
     try:
+        # 宮崎大学公式ホームページをブラウザで開きます
+        miyadai_url = "https://www.miyazaki-u.ac.jp/"
+        driver.get(miyadai_url)
+        print(driver.current_url)
+
         WebDriverWait(driver, 10).until(lambda driver: driver.current_url != miyadai_url)
         login_url = driver.current_url
         print(login_url)
