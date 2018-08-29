@@ -30,7 +30,7 @@ def login(mid):
         return
     driver = webdriver.Chrome(driver_path)
 
-    # Yahooのページをブラウザで開きます
+    # 宮崎大学公式ホームページをブラウザで開きます
     miyadai_url = "https://www.miyazaki-u.ac.jp/"
     driver.get(miyadai_url)
     print(driver.current_url)
