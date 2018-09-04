@@ -32,11 +32,7 @@ Don't work Python3.7 for Windows.
 
 ### Raspbian
 
-__!!!Caution!!!__
-This script cannot run at Raspberry Pi ZERO!
-Please run at Raspberry Pi using __armv7l__!
-
-Checking method: Run `uname -a`
+If you want to run headless, install Xvfb (Run `sudo apt install xvfb`)
 
 1. Open terminal
 1. Run `sudo apt install libffi-dev`
@@ -52,8 +48,12 @@ Checking method: Run `uname -a`
 1. Run `cd miyadai-sso-auto-login`
 1. Edit 17 line to `        driver_path = "/path/in/your/chromedriver/chromedriver"` in miyadai_login_in_raspbian.py
 1. Run `pipenv --python 3.6.6 install`
+    1. If the above is TIMEOUT, run `export PIPENV_TIMEOUT=500` and rerun the above command
+1. Run `pipenv --python 3.6.6 install`
 1. Run `pipenv install selenium`
 1. Run `pipenv run python ./save_pass_in_raspbian.py`
 1. Run `pipenv run python ./miyadai_login_in_raspbian.py`
+    1. If you want to run headless, run `xvfb-run pipenv run python ./miyadai_login_in_raspbian.py`
 1. Perform clone setting.(参照: [Ubuntuで定期自動ログインする
 ](https://github.com/korosuke613/miyadai-sso-auto-login/wiki/Ubuntu%E3%81%A7%E5%AE%9A%E6%9C%9F%E8%87%AA%E5%8B%95%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%99%E3%82%8B))
+    1. You should edit `pipenv run python ./miyadai_login.py >>./cron_log.txt 2>>./error-log.txt` to `pipenv run python ./miyadai_login_in_raspbian.py >>./cron_log.txt 2>>./error-log.txt` or `xvfb-run pipenv run python ./miyadai_login_in_raspbian.py >>./cron_log.txt 2>>./error-log.txt` in croning.sh
